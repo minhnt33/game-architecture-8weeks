@@ -20,8 +20,6 @@ namespace Mimi.Games
     /// </summary>
     public abstract class BaseAdService : BaseServiceSO, IAdService
     {
-        [SerializeField] private BaseAdService[] decorators;
-        
         private IAdAdapter adAdapter;
 
         protected abstract IAdAdapter CreateAdAdapter();

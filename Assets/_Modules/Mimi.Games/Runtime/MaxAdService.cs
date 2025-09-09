@@ -6,7 +6,7 @@ namespace Mimi.Games
     public class MaxAdService : BaseAdService
     {
         [SerializeField] private string maxAdId;
-        
+
         protected override IAdAdapter CreateAdAdapter()
         {
             return new MaxAdapter();

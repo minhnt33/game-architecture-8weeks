@@ -1,8 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Mimi.Games
 {
-    public class MaxAdapter : IAdAdapter
+    public class LogAds : IAdAdapter
     {
         public void Initialize()
         {
@@ -14,17 +14,17 @@ namespace Mimi.Games
 
         public void ShowBanner()
         {
-            Debug.Log($"--- (ADS) Showing Max BANNER");
+            Debug.Log($"--- (ADS) Log BANNER");
         }
 
         public void ShowInterstitial()
         {
-            Debug.Log($"--- (ADS) Showing Max INTER");
+            Debug.Log($"--- (ADS) Log INTER");
         }
 
         public void ShowRewardedVideo()
         {
-            Debug.Log($"--- (ADS) Showing Max REWARD");
+            Debug.Log($"--- (ADS) Log REWARD");
         }
     }
 }

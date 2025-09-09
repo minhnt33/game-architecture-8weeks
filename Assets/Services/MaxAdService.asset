@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6afff5f56dd948c39d41a21f3d2555e8, type: 3}
-  m_Name: AdService
+  m_Name: MaxAdService
   m_EditorClassIdentifier: 
   decorators: []
   maxAdId: asjildhiuqwfnlkashflsak
