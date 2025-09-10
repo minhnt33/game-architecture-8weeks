@@ -7,4 +7,10 @@ namespace Mimi.Games
         public abstract void Initialize();
         public abstract void Dispose();
     }
+
+    public abstract class BaseDecoratorSO : ScriptableObject
+    {
+        public abstract void Initialize(IAdService adService);
+        public abstract void Dispose();
+    }
 }

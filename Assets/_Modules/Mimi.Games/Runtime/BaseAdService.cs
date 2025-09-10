@@ -50,4 +50,43 @@ namespace Mimi.Games
             this.adAdapter.ShowRewardedVideo();
         }
     }
+
+    public abstract class BaseAdDecorator : BaseDecoratorSO, IAdService
+    {
+        private IAdAdapter adAdapter;
+
+        public IAdAdapter ADAdapter => this.adAdapter;
+
+        protected abstract IAdAdapter CreateAdAdapter(IAdService adService);
+
+        public override void Initialize(IAdService adService)
+        {
+            this.adAdapter = CreateAdAdapter(adService);
+            this.adAdapter.Initialize();
+        }
+
+        public void Initialize()
+        {
+        }
+
+        public override void Dispose()
+        {
+            this.adAdapter.Dispose();
+        }
+
+        public void ShowBanner()
+        {
+            this.adAdapter.ShowBanner();
+        }
+
+        public void ShowInterstitial()
+        {
+            this.adAdapter.ShowInterstitial();
+        }
+
+        public void ShowRewardedVideo()
+        {
+            this.adAdapter.ShowRewardedVideo();
+        }
+    }
 }
