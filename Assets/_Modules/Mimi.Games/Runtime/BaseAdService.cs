@@ -18,10 +18,8 @@ namespace Mimi.Games
     /// 4. Interface Segregation
     /// 5. Dependency Inversion
     /// </summary>
-    public abstract class BaseAdService : BaseServiceSO, IAdService
+    public abstract class BaseAdService : BaseAdServiceSO
     {
-        [SerializeField] private BaseAdService[] decorators;
-        
         private IAdAdapter adAdapter;
 
         protected abstract IAdAdapter CreateAdAdapter();
@@ -37,17 +35,17 @@ namespace Mimi.Games
             this.adAdapter.Dispose();
         }
 
-        public void ShowBanner()
+        public override void ShowBanner()
         {
             this.adAdapter.ShowBanner();
         }
 
-        public void ShowInterstitial()
+        public override void ShowInterstitial()
         {
             this.adAdapter.ShowInterstitial();
         }
 
-        public void ShowRewardedVideo()
+        public override void ShowRewardedVideo()
         {
             this.adAdapter.ShowRewardedVideo();
         }

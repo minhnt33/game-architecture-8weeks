@@ -152,10 +152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initSteps:
   - {fileID: 151227618}
-  - {fileID: 151227618}
-  - {fileID: 151227618}
-  - {fileID: 151227618}
-  - {fileID: 151227618}
 --- !u!114 &151227616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4df939e6e4422b9e509c53a896f891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adService: {fileID: 11400000, guid: 0b5802dfd2945433f88524944d93aedd, type: 2}
+  adService: {fileID: 11400000, guid: ffcbbda0e781a4342898b2e97bda12a5, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
